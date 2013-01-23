@@ -4,4 +4,6 @@ A HTTP Proxy server written in NodeJS
 Run it with
 nodejs server/server.js
 
-It will output a lot of debug data, but for now it is all I needed.
+By default it runs in port 8080
+
+It will output a lot of debug data, but for now it is all I need.

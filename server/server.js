@@ -1,6 +1,8 @@
 var http = require( 'http' );
 var url = require( 'url' );
 
+var listen_port = 8080;
+
 http.createServer( function( request, response )
 {
 	var url_parts = url.parse( request.url );
@@ -31,6 +33,11 @@ http.createServer( function( request, response )
 			response.end();
 		} );
 
+		res.on( 'error', function ( e )
+		{
+			console.log( 'Error with client ', e );
+		} );
+
 		response.writeHead( res.statusCode, res.headers );
 	} );
 
@@ -53,6 +60,6 @@ http.createServer( function( request, response )
 		console.log( 'Problem with request ', e );
 	} );
 
-} ).listen( 8080 );
+} ).listen( listen_port );
 
-console.log( 'all ok' );
+console.log( 'Proxy started on port ' + listen_port );
