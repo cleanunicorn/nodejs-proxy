@@ -1,7 +1,7 @@
 var http = require( 'http' );
 var url = require( 'url' );
 
-var listen_port = 8080;
+var listen_port = process.env.PORT || 8080;
 
 http.createServer( function( request, response )
 {
