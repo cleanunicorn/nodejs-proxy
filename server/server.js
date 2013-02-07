@@ -9,7 +9,7 @@ http.createServer( function( request, response )
 
 	var options = {
 		hostname 	: request.headers.host,
-		port 		: 80,
+		port 		: url_parts.port,
 		path 		: url_parts.path,
 		method 		: request.method, 
 		headers		: request.headers
