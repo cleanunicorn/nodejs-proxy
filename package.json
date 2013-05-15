@@ -1,12 +1,32 @@
 {
-  "name": "node-example",
+  "name": "nodejs-proxy",
   "version": "0.0.1",
   "dependencies": {
     "http": "",
-	"url" : ""
+    "url": ""
   },
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
+  },
+  "readmeFilename": "README",
+  "gitHead": "cc828fb783b276da6e8ec7fe93ac8eb1b82f096e",
+  "description": "A HTTP Proxy server written in NodeJS",
+  "main": "server/server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hydrarulz/nodejs-proxy.git"
+  },
+  "keywords": [
+    "proxy"
+  ],
+  "author": "Luca Daniel",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/hydrarulz/nodejs-proxy/issues"
   }
 }
